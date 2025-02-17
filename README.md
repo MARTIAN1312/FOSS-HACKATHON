@@ -67,7 +67,7 @@ The application will be available at `http://localhost:8000`
 - **Rahul Yadav** (@rahul-afkCoder)
 - **Ishan Kumar Badpaga** (@Ishanbadpaga)
 - **Kumar Vikrant** (@kumarvikrant12)
-- **Sumit Kumar**(@Sumit-217)
+
 ---
 ## 📜 License
 This project is open-source and available under the [MIT License](LICENSE).

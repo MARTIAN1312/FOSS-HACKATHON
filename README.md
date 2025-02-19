@@ -25,7 +25,7 @@ A lightweight FOSS code analysis tool that helps developers identify and fix cod
 
 - **Backend**: Python, FastAPI
 - **Analysis Tools**: Pylint, Bandit
-- **Frontend**: TypeScript, JavaScript, CSS
+- **Frontend**: TypeScript, JavaScript, CSS , Python
 - **Documentation**: Markdown, OpenAPI/Swagger
 - **Testing**: pytest
 

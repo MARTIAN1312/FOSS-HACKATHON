@@ -1,83 +1,114 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // Enable dark mode using the "class" strategy
   darkMode: ["class"],
+
+  // Specify the files where Tailwind should look for class names
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-    "*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{ts,tsx}",   // Include all TypeScript and TSX files in the pages directory
+    "./components/**/*.{ts,tsx}", // Include all TypeScript and TSX files in the components directory
+    "./app/**/*.{ts,tsx}",     // Include all TypeScript and TSX files in the app directory
+    "./src/**/*.{ts,tsx}",     // Include all TypeScript and TSX files in the src directory
+    "*.{js,ts,jsx,tsx,mdx}",   // Include files with specified extensions in the root directory
   ],
+
   theme: {
+    // Configure the container utility to be centered and have specific padding
     container: {
-      center: true,
-      padding: "2rem",
+      center: true,          // Center the container horizontally
+      padding: "2rem",      // Set padding inside the container
       screens: {
-        "2xl": "1400px",
+        "2xl": "1400px",  // Set maximum width for 2xl breakpoint
       },
     },
+
     extend: {
+      // Extend default colors with custom values
       colors: {
-        "primary-background": "#FFFCF9",
-        "primary-accent": "#FF5307",
-        "secondary-accent": "#247BA0",
-        "dark-elements": "#0B132B",
-        success: "#32DE8A",
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        "primary-background": "#FFFCF9",  // Background color
+        "primary-accent": "#FF5307",      // Primary accent color
+        "secondary-accent": "#247BA0",    // Secondary accent color
+        "dark-elements": "#0B132B",       // Dark color for elements
+        success: "#32DE8A",                // Success color
+        border: "hsl(var(--border))",      // Border color using CSS variable
+        input: "hsl(var(--input))",        // Input color using CSS variable
+        ring: "hsl(var(--ring))",          // Focus ring color
+        background: "hsl(var(--background))", // Background color using CSS variable
+        foreground: "hsl(var(--foreground))", // Foreground color using CSS variable
+
+        // Primary color variations
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "hsl(var(--primary))",        // Default primary color
+          foreground: "hsl(var(--primary-foreground))", // Primary foreground color
         },
+
+        // Secondary color variations
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
+
+        // Destructive color variations
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+
+        // Muted color variations
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
+
+        // Accent color variations
         accent: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+
+        // Popover color variations
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
+
+        // Card color variations
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
       },
+
+      // Extend border radius with custom values
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "var(--radius)",               // Large border radius
+        md: "calc(var(--radius) - 2px)",  // Medium border radius
+        sm: "calc(var(--radius) - 4px)",  // Small border radius
       },
+
+      // Define custom keyframe animations
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
+          from: { height: 0 }, // Start from zero height
+          to: { height: "var(--radix-accordion-content-height)" }, // Expand to full height
         },
         "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          from: { height: "var(--radix-accordion-content-height)" }, // Start from full height
+          to: { height: 0 }, // Collapse to zero height
         },
       },
+
+      // Define animation classes using the keyframes
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        "accordion-down": "accordion-down 0.2s ease-out", // Accordion down animation
+        "accordion-up": "accordion-up 0.2s ease-out",     // Accordion up animation
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+
+  // Include additional plugins
+  plugins: [require("tailwindcss-animate")], // Use tailwindcss-animate plugin
 }
+
+
 

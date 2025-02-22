@@ -26,7 +26,7 @@ A cutting-edge, open-source code analysis tool that empowers developers to write
 
 🔹 **Backend**: Python, FastAPI  
 🔹 **Analysis Tools**: Pylint, Bandit  
-🔹 **Frontend**: TypeScript, JavaScript, CSS (Built with [V0.dev](https://v0.dev))  
+🔹 **Frontend**: TypeScript, JavaScript, CSS   
 🔹 **Documentation**: Markdown, OpenAPI/Swagger  
 🔹 **Testing**: pytest  
 

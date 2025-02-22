@@ -95,10 +95,10 @@ The application will be available at `http://localhost:8000`.
 
 ## 👥 Contributors
 
-- **Sarthak Dubey** ([@MARTIAN1312](https://github.com/MARTIAN1312)) – Backend & Project Lead
-- **Rahul Yadav** ([@rahul-afkCoder](https://github.com/rahul-afkCoder)) – Frontend & UI Design
-- **Ishan Kumar Badpaga** ([@Ishanbadpaga](https://github.com/Ishanbadpaga)) – Code Analysis & Testing
-- **Kumar Vikrant** ([@kumarvikrant12](https://github.com/kumarvikrant12)) – Documentation & Deployment
+- **Sarthak Dubey** ([@MARTIAN1312](https://github.com/MARTIAN1312)) 
+- **Rahul Yadav** ([@rahul-afkCoder](https://github.com/rahul-afkCoder)) 
+- **Ishan Kumar Badpaga** ([@Ishanbadpaga](https://github.com/Ishanbadpaga)) 
+- **Kumar Vikrant** ([@kumarvikrant12](https://github.com/kumarvikrant12))
 
 ---
 
